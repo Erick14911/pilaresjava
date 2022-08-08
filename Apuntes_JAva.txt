@@ -1,0 +1,546 @@
+/*Java 
+  Trabajamos primero abriendo una clase "public class NOMBRE{}"
+  Seguido de de los parametros "public static void main (Straing[]args){}" 
+ */
+Declaramos la clase =                                 public class nombre{}
+importar paquetes   =  import java.util.Scanner || import java.util.Random ||import java.lang.String || import java.util.*
+
+Se declara el metodo principal = public static void main(String[] args){}
+
+los comandos de salida son : System.out.print("");  ||  System.out.println() //Cambio de renglon
+
+TABLA DE ESCAPES EN JAVA 
+Código de Escape               Significado               Códigos ASCII
+                                                          Dec       Hex
+      '\n'                     nueva línea              13 10     OD OA
+      '\r'                   retorno de carro             13       OD
+      '\t'                     tabulación                  9       09
+      '\b'                 retroceso de espacio            8       08
+      '\f'                  avance de página              12       OC
+      '\\'                barra inclinada inversa         92       5C
+      '\''                    comilla simple              39       27
+      '\"'                    doble comilla               34       22
+     '\000'                   número octal                Todos Todos
+    '\uhhhh'                número hexadecimal            Todos Todos
+
+Declarando los atributos(Tipos de variables)
+       
+        int x;
+        double y;
+        char z;
+        String s;
+        boolean w;}
+  **Casting: (float)var
+        x=8; y=9.8; z='A'; w=true; //asignandoles una identidad(valor)
+        System.out.println("X = "+x+" Y = "+y+" Z = "+z+" W = "+w); // IMPRIMIENDO    "X=8  Y=9.8  Z=A  W=true"
+
+Al declarar un valor con una operación entre atributos tipo A+B=C podemos omitir C A=A+B resumiendo 
+A+=B. En caso de divisores se puede tener un numerador entero pero el divisor debe ser fraccionario
+
+API de java es un conjunto de clases de donde escogemos ejem. Scanner, creamos un objeto tipo Scanner
+y utilizamos lo metodos de la clase como .nextInt() .nextDouble() .next().charAt() .nextLine
+
+import java.util.Scanner;                                 //Declaro la Classe Scanner
+public class Intercambio {
+
+    public static void main(String[] args) {
+        double a,b,aux;
+        Scanner S = new Scanner(System.in);               //Declaro el objeto S de class Scanner        
+        System.out.print("Introdusca valores para A ");
+        a=S.nextDouble();                                 //utiliso el metodo nextDouble()
+        System.out.println("A = "+a);
+        System.out.print("Introdusca valores para B ");
+        b=S.nextDouble();
+        System.out.println("B = "+b);
+        aux=a;                                            //pongo a en Aux
+        a=b;                                              //pongo b en a
+        b=aux;                                            //pongo aux en b
+        System.out.println("Invertidos A="+a+" B="+b);
+    }
+}
+
+Condicon [si?]if(){}  [si no?]else {}. Se pueden anidar [o si?]else if (){} En el parentesis ponen las condiciones estas pueden ser multiples con las puertas && y ||
+
+import java.util.Scanner;                                 //Declaro la Classe Scanner
+public class Intercambio {
+public static void main(String[] args) {
+
+        Scanner S=new Scanner(System.in);       /* declaramos nuestro objeto de la clase Scanner
+        boolean w;                                //declaramos las variables
+        int a; 
+        double temp;                             /*
+        
+        w=true;                                 //DAMOS EL VALOR TRUE A W
+        System.out.print("Ingrese un numero Entero ");
+        a=S.nextInt();
+        a%=2;                                                           //dividimos nuestro numero entre dos y obtenemos su residuo
+        if( a > 0 )                                                     //comparamos el residuo 
+            System.out.println("El numero ingresado es impar");
+        else
+            System.out.println("EL numero ingresado es Par");
+       System.out.println();
+
+       System.out.print("Ingrese una temperatura ");
+       temp=T.nextDouble();
+       if(temp>25) System.out.println(" El Clima es caluroso");
+       else if (temp>20) {System.out.println(" EL Clima es Templado"); w=false;}
+       else System.out.println(" El Clima es frio");
+       System.out.println();
+       if (!w) System.out.println("Buen Día");
+       else System.out.println("Mal Día");   
+}}
+
+LAS INSTRUCCIONES SWITCH Y DO WHILE pueden ser usadas para mostrar un menu en la pantalla 
+ 
+import java.util.Scanner;
+public class Interrumptor {
+    public static void main(String[] args) {
+     
+    int a,b;                                      /*DECLARACION DE VARIABLES*/
+    Scanner S=new Scanner(System.in);
+    
+    do{                                                                                                   // DO{} WHILE () nos permite primero hacer los procedimientos al menos una vez 
+    System.out.println("1.-Se imprimira 'Hola mundo'");                    // antes de comparar la condición. 
+    System.out.println("2.-Se imprimira los numeros entre 5 y 9");         //
+    System.out.println("3.-Se imprimira 'a tus ordenes");                  //
+    System.out.print("Introduce una opción ");                             
+     a=S.nextInt();
+    }while(a>3||a<1);
+
+    switch(a){                                                             //switch(){case []: ----break;} nos permite comparar una variable con diferentes
+        case 1:System.out.print("Hola mundo");                             //casos  cada caso termina con un break;
+        break;
+        case 2:for(int i=6;i<9;i++)
+        {System.out.print(i+" ");}
+        break;
+        case 3:System.out.print("A tus ordenes");
+        break;
+      }
+    System.out.println();
+}
+}
+
+FOR Y WHILE son dos bucles que pueden realizar funciones similares pero el for nos permite declarar el contador en la condicion y el aumento
+
+import java.util.Scanner;
+
+public class Cuarto {
+
+ 
+    public static void main(String[] args) {
+    
+    int i=0,j,a,b,c,suma=0;                 /* variables 
+    Scanner S=new Scanner(System.in);       */
+    
+    while(i<5)                         //vemos realizar un proceso con el ciclo while
+    { System.out.print(i+" ");
+      i+=1;}
+    
+    System.out.println();
+    
+    for(j=0;j<5;j+=1)                 //vemos realizar un proceso con el ciclo for
+    {System.out.print(j+" ");
+    }
+    System.out.println();
+    
+    System.out.print("Introsuce los parametros ");
+    a=S.nextInt();
+    System.out.print(" y ");
+    b=S.nextInt();
+    c=a-b;
+        if (a!=b && c<-1||c>1){                                              //se realiza el proceso con while anidados
+    System.out.println("Los numeros entre los parametros son :"); 
+      if(a>b) {c=a-b;
+               while (c!=1){ b++;
+               System.out.print(b+" ");
+               c--; suma+=b;}
+               }
+      if(a<b) {c=b-a;
+               while (c!=1){ a++;
+               System.out.print(a+" ");
+               c--; suma+=a;}
+               }
+        }
+    else if (a!=b)System.out.println("Los numeros dados son continuos");
+    else System.out.println("Los numeros dados son iguales");
+    System.out.println();
+    System.out.print("La suma de los numeros entre parametros es "+suma);
+    System.out.println(); 
+
+    System.out.print("Introsuce los parametros ");                       //se realiza el proceso con for anidados
+    a=S.nextInt();
+    System.out.print(" y ");
+    b=S.nextInt();
+    c=a-b;
+        if (a!=b && c<-1||c>1){ 
+    System.out.println("Los numeros entre los parametros son :"); 
+      if(a>b) {c=a-b;
+               while (c!=1){ b++;
+               System.out.print(b+" ");
+               c--; suma+=b;}
+               }
+      if(a<b) {c=b-a;
+               while (c!=1){ a++;
+               System.out.print(a+" ");
+               c--; suma+=a;}
+               }
+        }
+    else if (a!=b)System.out.println("Los numeros dados son continuos");
+    else System.out.println("Los numeros dados son iguales");
+    System.out.println();
+    System.out.print("La suma de los numeros entre parametros es "+suma);
+    System.out.println();    
+    }
+    }
+Para ingresar una cadena de caracteres se utiliza la variable String
+
+import java.util.Scanner;
+
+
+public class Quinto {
+
+    
+    public static void main(String[] args) {
+String a="Programacion en Java";
+String b="Programacion en Java";
+System.out.println(a);
+System.out.println(a.length());                //imprime la longitud de la cadena
+ //a+=" es lo mejor";                          //puede sumarse una cadena a la cadena de caracteres
+ System.out.println(a);
+ System.out.println(a.length());
+ if(a==b)System.out.println("Son iguales");
+ else System.out.println("Son diferentes");
+ 
+CADENAS DE CARACTERES se escanean con el metodo .nextLine();
+ 
+ Scanner S=new Scanner(System.in);
+        String A,B;
+        String May="ABCDEFGHIJKLMNOPQRSTUVWXYZ ";
+        String Min="abcdefghijklmnopqrstuvwxyz ";
+        B="";
+        System.out.print("Introduce un mensaje ");
+        A=S.nextLine();
+        System.out.println();
+        for(int i=0;i<A.length();i++){
+        for(int j=0;j<May.length();j++){
+          if(A.charAt(i)==May.charAt(j)){
+            if(j+1>=May.length()){
+                B+=May.charAt((j+1)%May.length());
+                    }
+            else B+=May.charAt((j+1));}
+          else if(A.charAt(i)==Min.charAt(j)){
+                 if(j+1>=Min.length()){
+                 B+=Min.charAt((j+1)%Min.length()); }
+            else B+=Min.charAt((j+1));}
+    } 
+}
+        System.out.println(B+" ");
+        System.out.println(); 
+ 
+}   
+}
+LOS VECTORES son variables que se declaran como objetos de la clase de la variable y con parametros de vector
+
+import java.util.Scanner;
+import java.lang.String;
+import java.util.Random;
+public class Sexto {
+
+   
+    public static void main(String[] args) {
+      Scanner S=new Scanner(System.in);
+        int l;
+         
+    System.out.print("Da la longitud del vector ");
+    l=S.nextInt(); 
+    int[] vec=new int[l];                                   //declaramos un vector dando el tipo de variable, la dimencion, el nombre e inicializamos el contructor
+    double suma=0;                                          //declaramos una variable para la suma de los componentes del vector
+    for(int i=0;i<l;i++)
+    {System.out.print("Da el valor del vector ");
+    vec[i]=S.nextInt(); 
+    suma+=vec[i];}
+    for(int i=0;i<l;i++){
+    System.out.print(vec[i]+" ");
+    }
+    System.out.println();
+    suma/=l;                                                //para sacar la media dividimos la suma entre el numero de componentes
+    System.out.println("La media es "+suma);
+    
+     int[]vec2={4,19,77,46,45,34};                          //declaramos un vector inicializando sus componentes
+     int aux;
+     for (int i=0;i<vec2.length;i++){
+        
+     for (int j=i+1;j<vec2.length;j++){                    //ordenaiento de menor a mayor
+         if( vec2[j]>vec2[i]){
+             aux=vec2[j];
+             vec2[j]=vec2[i];        
+             vec2[i]=aux;}}}
+     for(int i=0;i<vec2.length;i++){
+             System.out.print(vec2[i]+" ");
+     }
+     System.out.println();
+       
+    int  a=1,b=1;
+    int[]vec1=new int [20];
+    
+    for(int n=0;a==1;n++){
+    System.out.print("Ingrese un valor ");
+    vec1[n]=S.nextInt();
+   
+    System.out.print("Ingrese '1' si desea continuar ");
+    a=S.nextInt();
+    if(a==1){b++;}
+    }
+    for(int i=0;i<b;i++){
+             System.out.print(vec1[i]+" ");
+     }
+    System.out.println();
+    
+    int[] vec3={2,4,7,8};
+    int[] vec4={2,4,7,8};
+    boolean igualdad=true;
+    if(vec2.length!=vec4.length) igualdad=false;
+    for(int i=0;i<vec3.length&&igualdad;i++){
+     if(vec3[i]!=vec4[i])igualdad=false;}
+    if(igualdad)System.out.print("Son iguales");
+    else System.out.print("Son diferentes");
+    System.out.println();
+        
+        
+        
+    } 
+}
+
+LAS MATRICES son similares a los vectores pero poseen dos dimenciones
+
+import java.util.Scanner;
+import java.lang.String;
+public class M2T {
+
+    
+    public static void main(String[] args) {
+        int a,b;     
+        int[][] matrisD={{1,2,3},                   //Declaramos una matriz dando el tipo de variable indicando dimenciones
+                         {4,5,6},                   //dando un nombre e inicializando con llaves por matriz y por vector
+                         {7,8,9}};
+    Scanner S=new Scanner(System.in);
+    int[][] matris=new int[2][2];                                  //declaro una matris solo inicializando su contructor con corchetes
+    for (int i=0;i<matris.length;i++){                             //la matris.length nos da el vector vertical
+    for (int j=0;j<matris[i].length;j++){                          //el matris[i].length nos da el vector horizontal
+    System.out.print("valor de la Matris["+i+"]"+"["+j+"] ");     
+    matris[i][j]=S.nextInt();}}
+    System.out.println();
+    for(int i=0;i<matris.length;i++){
+    for(int j=0;j<matris[0].length;j++){
+     System.out.print(matris[i][j]+" ");
+    }System.out.println();}
+    System.out.println();
+    System.out.println();
+    System.out.print("Introduce el vector en y ");
+    a=S.nextInt();
+    System.out.print("Introduce el vector en x ");
+    b=S.nextInt();
+    int cont=1;
+    int[][] matrisN=new int [a][b];                                                    //Declaramos la matriz N
+    for(int i=0;i<matrisD.length;i++){                        
+    for(int j=0;j<matrisD[0].length;j++){
+    matrisN[i][j]=cont;                                    
+    cont++;                               
+    System.out.print(matrisD[i][j]);
+    }System.out.println();}
+    if(matrisD.length==matrisN.length&&matrisD[0].length==matrisN[0].length){          //comparamos la matriz N con D
+    for(int i=0;i<matrisN.length;i++){
+    for(int j=0;j<matrisN[0].length;j++){
+    System.out.print(matrisN[i][j]);
+    }System.out.println();}}    
+    
+}    
+}
+
+LAS CLASES Y OBJETOS EL PROGRAMA SIEMPRE BUSCARA EL METODO public static void main(String[]arg){} para empezar a ejecutarse
+
+package bloques;
+import java.util.Scanner;
+import java.lang.String;
+import java.util.Random;
+public class Bloques {
+
+    
+    public static void main(String[] args) {
+    boolean jedi=true,sith=true;    
+    Random rand=new Random(System.nanoTime());                     //el objeto RAndom se sincroniza con el nanoTime del Systema
+    int aleatorio,aux;
+    Scanner S=new Scanner(System.in);
+    Guerrero yoda=new Guerrero(); //declaracion de objeto
+    Guerrero luck=new Guerrero();
+    Guerrero Dark_Vader=new Guerrero();
+    
+    //yoda.nombre="Goku"; Manera incorrecta
+    
+    // System.out.print("introduce un nombre ");
+    //yoda.setString(S.nextLine());
+    yoda.setString("Yoda"); //manera correcta pero poco dinamica
+    yoda.setfuerza(10);
+    yoda.setpoder(40);
+    yoda.setph(3);
+    yoda.setnivel(5);
+    yoda.setsalud(200);
+    
+    luck.setString("Luck");
+    luck.setfuerza(20);
+    luck.setpoder(20);
+    luck.setph(2);
+    luck.setnivel(2);
+    luck.setsalud(300);
+    
+    Dark_Vader.setString("Dark Vader");
+    Dark_Vader.setfuerza(30);
+    Dark_Vader.setpoder(50);
+    Dark_Vader.setph(5);
+    Dark_Vader.setnivel(5);
+    Dark_Vader.setsalud(500);
+    
+    System.out.println(luck.getString()+" Salud = "+luck.getsalud());
+    System.out.println(yoda.getString()+" Salud = "+yoda.getsalud());
+    System.out.println(Dark_Vader.getString()+" Salud = "+Dark_Vader.getsalud());
+    
+    do{
+    aleatorio=rand.nextInt(2);
+    if(luck.getsalud()>0){
+    if(aleatorio==0){ aux=luck.ataque_fisico(); }
+    else              aux=luck.ataque_poder();
+    
+    System.out.println(luck.getString()+" Ha realizado un ataque de "+aux);
+    Dark_Vader.daño(aux);}
+    
+    aleatorio=rand.nextInt(2);
+    if(yoda.getsalud()>0){
+    if(aleatorio==0){aux=yoda.ataque_fisico();}
+    else             aux=yoda.ataque_poder();
+    System.out.println(yoda.getString()+" Ha realizado un ataque de "+aux);
+    Dark_Vader.daño(aux);}
+    
+    aleatorio=rand.nextInt(2);
+    if(Dark_Vader.getsalud()>0){
+    if(aleatorio==0){ aux=Dark_Vader.ataque_fisico();}
+    else              aux=Dark_Vader.ataque_poder();
+    System.out.println(Dark_Vader.getString()+" Ha realizado un ataque de "+aux);
+    aleatorio=rand.nextInt(2);
+    
+    if(luck.getsalud()>0&&aleatorio==0){luck.daño(aux);}
+    if(yoda.getsalud()>0&&aleatorio==1){yoda.daño(aux);}}
+    
+    if(luck.getsalud()<=0&&yoda.getsalud()<=0){
+    jedi=false;}
+    else if(Dark_Vader.getsalud()<=0)sith=false;
+    
+    System.out.println(luck.getString()+" Salud = "+luck.getsalud());
+    System.out.println(yoda.getString()+" Salud = "+yoda.getsalud());
+    System.out.println(Dark_Vader.getString()+" Salud = "+Dark_Vader.getsalud());
+     
+    try {System.in.read();}
+    catch(Exception e){}
+     
+    }while(jedi&&sith);
+       
+   }  
+}
+
+
+*******************************CLASE GUERRERO************* 
+
+package bloques;
+
+import java.util.Random;
+
+
+public class Guerrero {
+    private String nombre;
+    private int fuerza,salud,poder,ph,nivel;
+    private Random rand=new Random(System.nanoTime());
+//gets and sets    
+public String getString(){
+     return nombre;
+    }
+public void setString(String nombre){
+    this.nombre=nombre;}
+  
+  public int getint(){
+  return fuerza; }
+  public void setfuerza(int fuerza){
+  this.fuerza=fuerza;}
+  public int getsalud(){
+  return salud;}
+  public void setsalud(int salud){
+  this.salud=salud;}
+  public int getpoder(){
+  return poder;}
+  public void setpoder(int poder){
+  this.poder=poder;}
+  public int getph(){
+  return ph;}
+  public void setph(int ph){
+  this.ph=ph;}
+  public int getnivel(){
+  return nivel;}
+  public void setnivel(int nivel){
+  this.nivel=nivel;}
+
+//ataques
+public int ataque_fisico(){
+int aleatorio=rand.nextInt(3);
+return nivel*fuerza*aleatorio; 
+}
+public int ataque_poder(){
+if(ph<0){
+ph--;
+return nivel*poder;        }
+else return 0;}
+
+public void daño(int salud){
+this.salud-=salud;}
+
+}
+Metodos de JAva
+
+
+
+
+
+METODOS DE MATH
+Math.abs;
+Math.sin(R)
+Math.sqrt(R) //Raiz cuadrada
+
+PALABRAS RESERVADAS
+abstract
+assert
+catch
+continue
+enum
+extends
+finally
+goto
+implements
+instanceof
+interface
+native
+strictfp
+synchronized
+throw
+throws
+transient
+try
+volatile
+
+Tipo              Ejemplo        Tamaño en bytes          Rango mínimo/máximo
+char                'C'                2                  '\0000' .. '\FFFF'
+byte               -15                 1                      -128..127
+short              1024                2                    -32768..32767
+int               42325                4               -2147483648..2147483647
+long             262144                8      -9223372036854775808..+9223372036854775807
+float             10.5f                4              3.4*(10^-38)..3.4*(10^38)
+double          0.00045                8             1.7*(10^-308)..1.7*(10^308)
+boolean            true              1 bit                   false , true
+
+
