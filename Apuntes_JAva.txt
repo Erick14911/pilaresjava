@@ -511,6 +511,7 @@ METODOS DE MATH
 Math.abs;
 Math.sin(R)
 Math.sqrt(R) //Raiz cuadrada
+Math.pop(num,exp)
 
 PALABRAS RESERVADAS
 abstract

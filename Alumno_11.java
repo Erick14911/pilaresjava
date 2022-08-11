@@ -1,5 +1,11 @@
+/*
+ * @author:Erick14911
+ * Escuela_11
+ * Clase:Alumno_11 - Paquete:escuela
+ * 
+ */
 package escuela;
-public class Alumno{
+public class Alumno_11{
     String nombre;
     double calMatematicas;
     double calHistoria;
@@ -43,13 +49,13 @@ public Alumno(String nombre,double calMatematicas,double calHistoria,double calE
     }
 
     public String Aprueba(){
-    String mensaje;
-    if(this.promedio<6){
-    mensaje=this.nombre+" promedio "+this.promedio+" esta ¡REPROBADO!";
-    return mensaje;}
-    else{
-    mensaje=this.nombre+" promedio "+this.promedio+" esta ¡APROBADO!";
-    return mensaje;}
+        String mensaje;
+        if(this.promedio<6){
+            mensaje=this.nombre+" promedio "+this.promedio+" esta ¡REPROBADO!";
+             return mensaje;}
+        else{
+            mensaje=this.nombre+" promedio "+this.promedio+" esta ¡APROBADO!";
+             return mensaje;}
     }
 }  
 
