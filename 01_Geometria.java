@@ -1,8 +1,12 @@
-//python "round(redondear)" java "Math.sqrt()" "Math.pow()"
+/*
+* @author:Erick14911
+* Geometria
+*/ 
+
 
 import java.util.*;
 
-public class Basico1{
+public class 01_Geometria{
     public static void main(String[] args){
         Scanner in=new Scanner(System.in);
         double pi=3.1416;
