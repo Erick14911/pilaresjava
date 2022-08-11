@@ -1,6 +1,10 @@
+/*
+ * @author:Erick14911
+ * Semana_06
+ */
 import java.util.*;
 
-public class Basico6{
+public class Semana_06{
     public static void main(String[] args){
      Scanner in=new Scanner(System.in);  
      System.out.println("Introduce un numero del 1 al 7 para conocer el día de la semana ");

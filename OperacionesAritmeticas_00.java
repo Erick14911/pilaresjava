@@ -3,7 +3,7 @@
 */ 
 import java.util.*;
 // Class and main
-public class 00_OperacionesAritmeticas{
+public class OperacionesAritmeticas_00{
     public static void main(String[] args){
         // Your code here!
         Scanner in=new Scanner(System.in);

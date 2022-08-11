@@ -1,4 +1,4 @@
-/*Java 
+/*Java  
   Trabajamos primero abriendo una clase "public class NOMBRE{}"
   Seguido de de los parametros "public static void main (Straing[]args){}" 
  */
@@ -10,18 +10,18 @@ Se declara el metodo principal = public static void main(String[] args){}
 los comandos de salida son : System.out.print("");  ||  System.out.println() //Cambio de renglon
 
 TABLA DE ESCAPES EN JAVA 
-Código de Escape               Significado               Códigos ASCII
+Cï¿½digo de Escape               Significado               Cï¿½digos ASCII
                                                           Dec       Hex
-      '\n'                     nueva línea              13 10     OD OA
+      '\n'                     nueva lï¿½nea              13 10     OD OA
       '\r'                   retorno de carro             13       OD
-      '\t'                     tabulación                  9       09
+      '\t'                     tabulaciï¿½n                  9       09
       '\b'                 retroceso de espacio            8       08
-      '\f'                  avance de página              12       OC
+      '\f'                  avance de pï¿½gina              12       OC
       '\\'                barra inclinada inversa         92       5C
       '\''                    comilla simple              39       27
       '\"'                    doble comilla               34       22
-     '\000'                   número octal                Todos Todos
-    '\uhhhh'                número hexadecimal            Todos Todos
+     '\000'                   nï¿½mero octal                Todos Todos
+    '\uhhhh'                nï¿½mero hexadecimal            Todos Todos
 
 Declarando los atributos(Tipos de variables)
        
@@ -34,7 +34,7 @@ Declarando los atributos(Tipos de variables)
         x=8; y=9.8; z='A'; w=true; //asignandoles una identidad(valor)
         System.out.println("X = "+x+" Y = "+y+" Z = "+z+" W = "+w); // IMPRIMIENDO    "X=8  Y=9.8  Z=A  W=true"
 
-Al declarar un valor con una operación entre atributos tipo A+B=C podemos omitir C A=A+B resumiendo 
+Al declarar un valor con una operaciï¿½n entre atributos tipo A+B=C podemos omitir C A=A+B resumiendo 
 A+=B. En caso de divisores se puede tener un numerador entero pero el divisor debe ser fraccionario
 
 API de java es un conjunto de clases de donde escogemos ejem. Scanner, creamos un objeto tipo Scanner
@@ -86,8 +86,8 @@ public static void main(String[] args) {
        else if (temp>20) {System.out.println(" EL Clima es Templado"); w=false;}
        else System.out.println(" El Clima es frio");
        System.out.println();
-       if (!w) System.out.println("Buen Día");
-       else System.out.println("Mal Día");   
+       if (!w) System.out.println("Buen Dï¿½a");
+       else System.out.println("Mal Dï¿½a");   
 }}
 
 LAS INSTRUCCIONES SWITCH Y DO WHILE pueden ser usadas para mostrar un menu en la pantalla 
@@ -100,10 +100,10 @@ public class Interrumptor {
     Scanner S=new Scanner(System.in);
     
     do{                                                                                                   // DO{} WHILE () nos permite primero hacer los procedimientos al menos una vez 
-    System.out.println("1.-Se imprimira 'Hola mundo'");                    // antes de comparar la condición. 
+    System.out.println("1.-Se imprimira 'Hola mundo'");                    // antes de comparar la condiciï¿½n. 
     System.out.println("2.-Se imprimira los numeros entre 5 y 9");         //
     System.out.println("3.-Se imprimira 'a tus ordenes");                  //
-    System.out.print("Introduce una opción ");                             
+    System.out.print("Introduce una opciï¿½n ");                             
      a=S.nextInt();
     }while(a>3||a<1);
 
@@ -411,14 +411,14 @@ public class Bloques {
     else              aux=luck.ataque_poder();
     
     System.out.println(luck.getString()+" Ha realizado un ataque de "+aux);
-    Dark_Vader.daño(aux);}
+    Dark_Vader.daï¿½o(aux);}
     
     aleatorio=rand.nextInt(2);
     if(yoda.getsalud()>0){
     if(aleatorio==0){aux=yoda.ataque_fisico();}
     else             aux=yoda.ataque_poder();
     System.out.println(yoda.getString()+" Ha realizado un ataque de "+aux);
-    Dark_Vader.daño(aux);}
+    Dark_Vader.daï¿½o(aux);}
     
     aleatorio=rand.nextInt(2);
     if(Dark_Vader.getsalud()>0){
@@ -427,8 +427,8 @@ public class Bloques {
     System.out.println(Dark_Vader.getString()+" Ha realizado un ataque de "+aux);
     aleatorio=rand.nextInt(2);
     
-    if(luck.getsalud()>0&&aleatorio==0){luck.daño(aux);}
-    if(yoda.getsalud()>0&&aleatorio==1){yoda.daño(aux);}}
+    if(luck.getsalud()>0&&aleatorio==0){luck.daï¿½o(aux);}
+    if(yoda.getsalud()>0&&aleatorio==1){yoda.daï¿½o(aux);}}
     
     if(luck.getsalud()<=0&&yoda.getsalud()<=0){
     jedi=false;}
@@ -497,7 +497,7 @@ ph--;
 return nivel*poder;        }
 else return 0;}
 
-public void daño(int salud){
+public void daï¿½o(int salud){
 this.salud-=salud;}
 
 }
@@ -533,7 +533,7 @@ transient
 try
 volatile
 
-Tipo              Ejemplo        Tamaño en bytes          Rango mínimo/máximo
+Tipo              Ejemplo        Tamaï¿½o en bytes          Rango mï¿½nimo/mï¿½ximo
 char                'C'                2                  '\0000' .. '\FFFF'
 byte               -15                 1                      -128..127
 short              1024                2                    -32768..32767

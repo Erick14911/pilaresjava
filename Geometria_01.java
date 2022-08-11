@@ -6,7 +6,7 @@
 
 import java.util.*;
 
-public class 01_Geometria{
+public class Geometria_01{
     public static void main(String[] args){
         Scanner in=new Scanner(System.in);
         double pi=3.1416;

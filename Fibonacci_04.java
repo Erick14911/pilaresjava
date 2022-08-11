@@ -1,6 +1,10 @@
+/*
+ * @author:Erick14911
+ * Fibonacci_04
+ */
 import java.util.*;
 
-public class Basico4{
+public class Fibonacci_04{
     public static void main(String[] args){
         Scanner in=new Scanner(System.in);
         System.out.println("Cuenta Fibonacci hasta el elemento: ");

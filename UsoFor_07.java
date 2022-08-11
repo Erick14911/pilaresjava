@@ -1,22 +1,26 @@
+/*
+ * @author:ERick14911
+ * UsoFor_07
+ */
 import java.util.*;
 
-public class Basico7{
+public class UsoFor_07{
     public static void main(String[] args){
     Scanner in=new Scanner(System.in);  
 
     int [] lista={1,3,5,7,11,13,17,19,23};
     int suma=0;
-    int tama=lista.length;
+    int longlist=lista.length;
     float promedio;
     int max,min;
-    for(int i=0;i<tama;i++){
+    for(int i=0;i<longlist;i++){
     suma+=lista[i];
     }
-    promedio=(float)suma/(float)tama;
+    promedio=(float)suma/(float)longlist;
     System.out.println("El promedio es: "+promedio);
 
     max=lista[0];
-    for(int j=0;j<tama;j++){
+    for(int j=0;j<longlist;j++){
     if(max<lista[j])
     max=lista[j];
     }

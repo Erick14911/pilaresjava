@@ -3,7 +3,7 @@
  * 03_Switch_If_Else
  */
 import java.util.*;
-public class 03_Switch_If_Else{
+public class Switch_If_Else_03{
     public static void main(String[]args){
         Scanner in=new Scanner(System.in);
         Double califica;

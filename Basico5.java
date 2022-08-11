@@ -1,5 +1,9 @@
+/*
+ * @author:Erick14911
+ *  4 Ejercicios
+ */
 import java.util.*;
-public class Basico6 {
+public class Basico05 {
     public static void main(String args[]) {
 //Imprime todos los numeros del 1-100 divisibles entre 2 y3
         Scanner in=new Scanner(System.in);
@@ -18,7 +22,7 @@ public class Basico6 {
 }
 
 import java.util.*;
-public class Basico6 {
+public class Basico05 {
     public static void main(String args[]) {
 //Resive una frecuencia e indica la más cercana
         Scanner in=new Scanner(System.in);
@@ -37,7 +41,7 @@ public class Basico6 {
 }
 
 import java.util.*;
-public class Basico6 {
+public class Basico05 {
     public static void main(String args[]) {
 //Programa que pide registrar un numero determinado de alumnos y registrar su calificacion
 //Al final imprime el promedio grupal
@@ -60,7 +64,7 @@ public class Basico6 {
 
 
 import java.util.*;
-public class Basico5 {
+public class Basico05 {
     public static void main(String args[]) {
 //Suma numeros positivos y se detiene si se introduce un nemro negativo
     Scanner in=new Scanner(System.in);
