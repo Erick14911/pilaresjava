@@ -1,5 +1,9 @@
+/*
+ * @author:Erick14911
+ * 02_Logico
+ */
 import java.util.*;
-public class Basico2{
+public class 02_Logico{
     public static void main(String[]args){
         Scanner in=new Scanner(System.in);
         boolean divisor=false;

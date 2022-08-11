@@ -12,7 +12,7 @@ public class 00_OperacionesAritmeticas{
         Compuesto*/
         int num1,num2,num3;
         String nombre="Erick",nombre2;
-        double var1,var2,sum,rest,mult,div,exp,mod;
+        double var1,var2,sum,rest,mult,div,exp,mod,raiz,raiz2;
         Boolean logico=(false);
 
         System.out.println("Buenos Días "+nombre+"\n"+"Este programa realiza operaciones entre dos numeros que ingreses.");
@@ -34,7 +34,10 @@ public class 00_OperacionesAritmeticas{
         mult=var1*var2;
         div=var1/var2;
         exp=Math.pow(var1,var2);
+        raiz=Math.sqrt(var1);
+        raiz2=Math.sqrt(var2);
         mod=var1%var2;
+
        
         Boolean logico2=(var1==var2);
         System.out.println("Los numeros son iguales = "+logico2);
@@ -43,6 +46,8 @@ public class 00_OperacionesAritmeticas{
         System.out.println(var1+" * "+var2+" = "+mult);
         System.out.println(var1+" / "+var2+" = "+div);
         System.out.println(var1+" ^ "+var2+" = "+exp);
+        System.out.println("Raiz de "+var1+" = "+raiz);
+        System.out.println("Raiz de "+var2+" = "+raiz2);
         System.out.println(var1+" % "+var2+" = "+mod);
 
     }
