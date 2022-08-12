@@ -10,6 +10,7 @@
  * Character.toString(char),                        ->Char-String
  * Boolean.toString(b);     String.valueOf(b);      ->Boolean-String
  * "string".charAt(0)
+ * 
  */
 import java.util.Scanner;
 
