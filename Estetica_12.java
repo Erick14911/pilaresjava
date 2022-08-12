@@ -1,9 +1,15 @@
-/*Programa principal*/
+/*
+ * @author:Erick14911
+ * Estetica_12
+ * Clase:Estetica_12 - Funcion:main - Paquete:estetica
+ * 
+ */
 package estetica;
+
 import java.util.Scanner;
 import estetica.RecibeMascota;
 
-public class Estetica{
+public class Estetica_12{
    public static void main(String[] args){
    Scanner in = new Scanner(System.in);   
    RecibeMascota perro1=new RecibeMascota();

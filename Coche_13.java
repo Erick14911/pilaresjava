@@ -1,10 +1,14 @@
-
+/*
+ * @author:Erick14911
+ * Clase:Coche_13 - Funcion:main - Paquete:estetica
+ * 
+ */
 package coche;
 import java.util.Scanner;
-
+ 
 import coche.Vehiculo;
 
-public class Coche {
+public class Coche_13 {
 
     public static void main(String[] args) {
 

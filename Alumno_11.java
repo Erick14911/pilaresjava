@@ -1,6 +1,6 @@
 /*
  * @author:Erick14911
- * Escuela_11
+ * Alumno_11
  * Clase:Alumno_11 - Paquete:escuela
  * 
  */

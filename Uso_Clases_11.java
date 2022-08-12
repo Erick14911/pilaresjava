@@ -1,18 +1,30 @@
 /*
  * @author:Erick14911
  * Escuela_11
- * Clase:Califica_11 - Funcion:main - Paquete:escuela
+ * Clase:Uso_Clases_11 - Funcion:main - Paquete:escuela
  * 
+ * Clase: Representacion abstracta de un conjunto de objetos
+ * OBJETO:instancia de una clase;
+ * IDENTIFICADOR-identificador, 
+ * ESTADO-valor de sus atributos 
+ * PRIVATE-Uso solo en la clase
+ * PROTECTED-Uso solo en el paquete
+ * CONTRUCTOR:inicializa el estado del objeto
+ * METODOS:funciones del objeto
+ * HERENCIA: hija extends padre
+ * SUPER:
+ *      Constructor:super();
+ *      Metodo:     super.metodo();
+ *      Atributo:   super.atributo;
  */
 package escuela;
 import escuela.Alumno_11;
 
 import java.util.Scanner;
 
-public class Califica_11{
+public class Uso_Clases_11{
 
     public static void main(String[] args) {
-
         Scanner in=new Scanner(System.in);
         String nombre;
         double calMatematicas;

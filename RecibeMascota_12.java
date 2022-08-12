@@ -1,6 +1,12 @@
-/*Clase RecibeMascota*/
+/*
+ * @author:Erick14911
+ * RecibeMascotas_12
+ * Clase:RecibeMascotas_12 - Funcion:main - Paquete:estetica
+ * 
+ */
 package estetica;
-public class RecibeMascota{
+
+public class RecibeMascota_12{
    private String nombre_de_perro;
    private int edad;
    private String raza;

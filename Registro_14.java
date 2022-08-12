@@ -1,13 +1,16 @@
-/*Programa Principal. Trabaja con cuatro clases
- https://mariocelis.com/java/herencia-y-polimorfismo/#Herencia-y-Polimorfismo-en-Java*/
-package clientes;
-
+/*
+ * @author:Erick14911
+ * Clase:Registro_14 - Funcion:main - Paquete:estetica
+ * Programa Principal. Trabaja con cuatro clases
+ */
+ package clientes;
+ 
 import java.util.Scanner;
 import clientes.Cliente;
 import clientes.Vehiculo;
 import clientes.RentaVehiculo;
 
-public class Registro {
+public class Registro_14 {
   public static void main(String[] args) {
     Scanner in = new Scanner(System.in);
     String nombre;
