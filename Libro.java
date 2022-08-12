@@ -1,5 +1,16 @@
-//Integer.parseInt("20"), Double.parseDouble(""), String.valueOf(10)
-//String.valueOf(10),"string".charAt(0)
+/*
+ * @author:Erick14911
+ * Integer.parseInt("20"),Integer.valueOf("1991"),  ->String-Integer
+ * Double.parseDouble(""),                          ->String-Double
+ * Float.parseFloat(cadena);                        ->String-Float
+ * Boolean.parseBoolean(cadena);Boolean.valueOf(cadena); ->String-Boolean
+ *                          String.valueOf(doble)   ->Double-Sring
+ * Float.toString(flotante);                        ->Float-String
+ * Integer.toString(entero),String.valueOf(entero); ->Integer-String
+ * Character.toString(char),                        ->Char-String
+ * Boolean.toString(b);     String.valueOf(b);      ->Boolean-String
+ * "string".charAt(0)
+ */
 import java.util.Scanner;
 
 public class Libro {
