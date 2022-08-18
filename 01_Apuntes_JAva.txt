@@ -1,0 +1,5 @@
+* Casting
+Integer.parseInt("String");Double.parseDouble("String");Float.parseFloat("String");Boolean.parseBoolean("String");
+String.valueOf(), Boolean.valueOf(""), Integer.valueOf("");
+Float.toString();Integer.toString();Character.toString();Boolean.toString();
+
