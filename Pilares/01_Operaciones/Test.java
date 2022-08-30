@@ -22,7 +22,7 @@ public class Test{
 
         System.out.print("signo: ");
            
-        sig=(char)inC.next().charAt(0);
+        sig=(char)in.next().charAt(0);
         
         switch(sig){
         case '+':System.out.print("B: ");
